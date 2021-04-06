@@ -13,9 +13,8 @@ def currency(unit):
     return tr
   usd=float(json_data['rates']['USD'])
   currency=tr/usd
-  print(currency)
   currency=round(currency,6)
-  return currency
+  return "Yarım dolar :"+str(currency/2)
 
 @client.event
 async def on_ready():
